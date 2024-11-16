@@ -1,0 +1,245 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-title span {
+    color: #0f0;
+    transition: color 0.5s ease-in-out;
+}
+
+.header-title span + span {
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+
+.header-title:hover span {
+    color: #fff;
+}
+
+.header-title:hover span + span {
+    color: #0f0;
+}
+
+.header-title {
+    animation: animate 2s infinite;
+}
+
+.tagline {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    max-width: 240px; /* adjust this value to match the width of AGRIVISION */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* @keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    } */
+/* } */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.background-video {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #010000;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content h1 strong {
+    font-family: "Poppins", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content h1 strong b {
+    color: #0f0;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    animation: glow 2s infinite;
+}
+
+.content h1 strong b + b {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(1, 7, 1, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(2, 26, 2, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 5, 0, 0.5);
+    }
+}
+.content p {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.content button {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #0f0;
+    color: #fff;
+}
+/* 
+.farmer-login {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.landowner-login {
+    background-color: #03A9F4;
+    color: #fff;
+}
+.farmer-login, .landowner-login {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.farmer-login:hover, .landowner-login:hover {
+    background-color: #555;
+} */
+
+.farmer-login {
+    
+    background-color:  #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.farmer-login:hover {
+    background-color: #3e8e41;
+}
+
+.landowner-login {
+    background-color:  #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.landowner-login:hover {
+    background-color:  #3e8e41;
+}
+
+button {
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+footer {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
